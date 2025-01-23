@@ -1,0 +1,42 @@
+:root {
+  --primary: #8a2be2;
+  --lightPrimary: #ab00fe;
+}
+* {
+  font-family: "Montserrat", serif;
+}
+
+body,
+html {
+  padding: 0px;
+  margin: 0px;
+}
+a {
+  text-decoration: none !important;
+}
+.navbar {
+  background: #ccc;
+  padding: 20px;
+}
+.nav_item {
+  font-weight: bold;
+}
+.flex_container {
+  display: flex;
+}
+.justifier_navbar {
+  justify-content: space-between;
+}
+.profile_picture {
+  height: 300px;
+  width: 300px;
+  background: blue;
+  border-radius: 50%;
+  background: url("../images/pp.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.Intro_text {
+  font-size: 14px;
+  line-height: 20px;
+}
