@@ -36,7 +36,53 @@ a {
   background-size: cover;
   background-position: center;
 }
+.divider {
+  height: 2px;
+  background: #e7e7e7e7;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .Intro_text {
   font-size: 14px;
   line-height: 20px;
+}
+.rounded_card {
+  padding: 20px;
+  background: #f4f0f0;
+  border-radius: 20px;
+  margin-left: 15px;
+  box-shadow: 2px 2px 5px 5px #e7e7e7;
+  cursor: pointer;
+}
+.rounded_card:hover {
+  background: #e7e7e7;
+}
+
+.Main_button {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: var(--primary);
+  font-weight: bold;
+  color: #ccc;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 0px;
+  box-shadow: 5px 5px 5px 5px #c8a3e8;
+  transition: all 0.1s;
+}
+.Main_button:hover {
+  padding: 20px;
+}
+
+.logo_design {
+  font-size: 15px;
+  font-style: italic;
+  font-weight: bold;
+  padding: 5px;
+  border: 1px dashed var(--lightPrimary);
+  background-color: var(--primary);
+  color: #ccc;
+  letter-spacing: 3px;
 }
