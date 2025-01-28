@@ -86,3 +86,8 @@ a {
   color: #ccc;
   letter-spacing: 3px;
 }
+.Primary_banner {
+  background: var(--primary);
+  padding: 30px;
+  margin-top: 20px;
+}
