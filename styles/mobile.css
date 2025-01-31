@@ -3,13 +3,14 @@
     flex-direction: column;
     padding: 10px;
   }
-}
-.contact_pictures {
-  display: none;
-}
-.rounded_card {
-  width: auto;
-}
-.navbar_mobile {
-  flex-direction: row !important;
+
+  .contact_pictures {
+    display: none;
+  }
+  .rounded_card {
+    width: auto;
+  }
+  .navbar_Mobile {
+    flex-direction: row !important;
+  }
 }
