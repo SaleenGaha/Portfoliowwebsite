@@ -1,6 +1,6 @@
 :root {
-  --primary: #8a2be2;
-  --lightPrimary: #ab00fe;
+  --primary: #6a23b5;
+  --lightPrimary: #6a84ec;
 }
 * {
   font-family: "Montserrat", serif;
@@ -10,6 +10,7 @@ body,
 html {
   padding: 0px;
   margin: 0px;
+  min-width: 350px;
 }
 a {
   text-decoration: none !important;
@@ -17,9 +18,14 @@ a {
 .navbar {
   background: #ccc;
   padding: 20px;
+  position: sticky;
+  top: 0px;
+  right: 0px;
+  z-index: 999999999;
 }
 .nav_item {
   font-weight: bold;
+  padding: 5px;
 }
 .flex_container {
   display: flex;
@@ -55,6 +61,7 @@ a {
   margin-left: 15px;
   box-shadow: 2px 2px 5px 5px #e7e7e7;
   cursor: pointer;
+  width: 30%;
 }
 .rounded_card:hover {
   background: #e7e7e7;
@@ -90,4 +97,32 @@ a {
   background: var(--primary);
   padding: 30px;
   margin-top: 20px;
+}
+.contact_pictures {
+  background: red;
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  background: url(./../images/Contact.jpg);
+  background-size: cover;
+  background-position: center;
+}
+input,
+textarea {
+  border: 1px solid #e7e7e7;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+::placeholder {
+  font-size: 14px; /* Smaller font size */
+  font-family: "Arial", sans-serif;
+  color: #666; /* Gray color for placeholder */
+  font-style: italic;
+}
+.footer {
+  background: var(--lightPrimary);
+  color: white;
+  padding: 10px;
+  text-align: center;
 }

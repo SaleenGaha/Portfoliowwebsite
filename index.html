@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Saleen Gaha's Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -9,15 +10,17 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
     <link
       rel="stylesheet"
       href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <title>Saleen Gaha</title>
   </head>
 
   <body>
     <div
-      class="navbar flex_container justifier_navbar"
+      class="navbar flex_container justifier_navbar navbar_mobile"
       style="align-items: center"
     >
       <div class="logo_design">Saleen</div>
@@ -66,7 +69,20 @@
           </div>
         </div>
         <div>
-          <div class="profile_picture"></div>
+          <div class="profile_picture" style="position: relative">
+            <div
+              style="
+                position: absolute;
+                top: 0;
+                right: 25px;
+                height: 40px;
+                width: 40px;
+
+                background: var(--lightPrimary);
+                border-radius: 50%;
+              "
+            ></div>
+          </div>
         </div>
       </div>
     </div>
@@ -81,9 +97,9 @@
 
       <div
         class="flex_container"
-        style="justify-content: space-around; margin-top: 20px; gap: 20px"
+        style="justify-content: space-around; margin-top: 20px; gap: 30px"
       >
-        <div class="rounded_card" style="width: 45%; line-height: 20px">
+        <div class="rounded_card">
           <i
             class="fa-solid fa-code"
             style="font-size: 35px; color: var(--lightPrimary)"
@@ -107,7 +123,7 @@
           </div>
         </div>
 
-        <div class="rounded_card" style="width: 45%; line-height: 20px">
+        <div class="rounded_card">
           <i
             class="fa-solid fa-pen-fancy"
             style="font-size: 35px; color: var(--lightPrimary)"
@@ -155,6 +171,44 @@
     </div>
 
     <!-- contact me -->
-    <div class="COntact_section"></div>
+    <div
+      class="Contact_section"
+      style="
+        max-width: 900px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      "
+    >
+      <div class="flex_container" style="justify-content: space-between">
+        <div>
+          <div class="contact_pictures"></div>
+        </div>
+        <!-- form section -->
+        <div style="width: 500px">
+          <div style="font-size: 30px; font-weight: bold">Let's Connect</div>
+          <br />
+          <form>
+            <small>Your Name</small><br />
+            <input type="text" name="person_name" /><br />
+            <small> Mobile number:</small><br />
+            <input type="text" name="mobile_number" /><br />
+            <small>Message:</small><br />
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write your message here"
+              rows="5"
+              required
+            ></textarea>
+            <br />
+
+            <button type="submit" class="Main_button">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">saleengaha.com.np &copy;2025;All right reserved.</div>
   </body>
 </html>
