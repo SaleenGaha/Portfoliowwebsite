@@ -38,7 +38,7 @@ a {
 .profile_picture {
   height: 300px;
   width: 300px;
-  background: blue;
+
   border-radius: 50%;
   background: url("../images/pp.jpg");
   background-size: cover;
@@ -82,7 +82,8 @@ a {
   transition: all 0.1s;
 }
 .Main_button:hover {
-  padding: 20px;
+  transform: scale(1.05); /* Smooth scaling instead of padding increase */
+  transition: transform 0.2s ease-in-out;
 }
 
 .logo_design {
@@ -101,10 +102,9 @@ a {
   margin-top: 20px;
 }
 .contact_pictures {
-  background: red;
   border-radius: 50%;
-  height: 350px;
-  width: 350px;
+  height: 250px;
+  width: 250px;
   background: url(./../images/Contact.jpg);
   background-size: cover;
   background-position: center;

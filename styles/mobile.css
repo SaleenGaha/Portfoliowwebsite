@@ -8,9 +8,12 @@
     display: none;
   }
   .rounded_card {
-    width: auto;
+    width: 100%;
   }
   .navbar_Mobile {
     flex-direction: row !important;
+  }
+  .nav_item {
+    padding: 10px;
   }
 }
