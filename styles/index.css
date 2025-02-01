@@ -11,6 +11,7 @@ html {
   padding: 0px;
   margin: 0px;
   min-width: 350px;
+  overflow: hidden;
 }
 a {
   text-decoration: none !important;
