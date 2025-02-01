@@ -1,9 +1,9 @@
 :root {
-  --primary: #6a23b5;
-  --lightPrimary: #6a84ec;
+  --primary: #4caf50; /* Forest Green */
+  --lightPrimary: #81c784; /* Mint Green */
 }
 * {
-  font-family: "Montserrat", serif;
+  font-family: "League Spartan", serif;
 }
 
 body,
@@ -143,4 +143,44 @@ footer {
   text-decoration: none;
   font-size: 30px; /* Icon size */
   transition: color 0.3s ease-in-out;
+}
+/* General styling for the skills section */
+.skills-section {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #f4f4f4;
+}
+
+.skills-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Skills container styling */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Individual skill styling */
+.skill {
+  background-color: var(--lightPrimary);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
 }
