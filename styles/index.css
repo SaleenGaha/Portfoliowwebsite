@@ -167,43 +167,51 @@ footer {
   font-size: 30px; /* Icon size */
   transition: color 0.3s ease-in-out;
 }
-/* General styling for the skills section */
-.skills-section {
-  text-align: center;
-  padding: 30px 20px;
-  background-color: #f4f4f4;
+/*<!-- Wrapper for the skills grid -->*/
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  width: 80%; /* Makes it responsive */
+  cursor: pointer;
+  margin: auto;
 }
-
-.skills-section h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-  color: #333;
-}
-
-/* Skills container styling */
-.skills-container {
+/*Individual skill box*/
+.skill-box {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 15px;
-  max-width: 600px;
-  margin: 0 auto;
+  background-color: #f3f3f3;
+  border: 2px solid #e9e5e5;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 100%;
+  max-height: 100%;
 }
-
-/* Individual skill styling */
-.skill {
-  background-color: var(--lightPrimary);
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 20px;
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s, box-shadow 0.2s;
+.skill-icon {
+  width: 50px;
+  height: 50px;
 }
-
-.skill:hover {
-  transform: scale(1.1);
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+.skill-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.skill-box p {
+  font-size: 0.9rem; /* Text size */
+  font-weight: bold; /* Bold text */
+  color: #333; /* Dark text for readability */
+  text-align: center; /* Center-aligns the text */
+}
+p {
+  font-weight: 100;
+  font-family: "League Spartan", serif;
+}
+* {
+  box-sizing: border-box;
 }
