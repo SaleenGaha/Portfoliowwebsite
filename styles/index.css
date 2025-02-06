@@ -173,13 +173,14 @@ footer {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 20px;
-  background-color: #fff;
+  background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
   width: 80%; /* Makes it responsive */
   cursor: pointer;
   margin: auto;
 }
+
 /*Individual skill box*/
 .skill-box {
   display: flex;
@@ -191,12 +192,13 @@ footer {
   border-radius: 10px;
   padding: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 150px;
+  max-height: 100px;
 }
 .skill-icon {
   width: 50px;
   height: 50px;
+  margin-top: 20px;
 }
 .skill-box:hover {
   transform: scale(1.05);
