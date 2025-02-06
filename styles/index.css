@@ -12,7 +12,6 @@ html {
   margin: 0px;
   min-width: 350px;
   overflow-x: hidden;
-  overflow-y: auto;
 }
 a {
   text-decoration: none !important;
@@ -61,10 +60,12 @@ a {
   padding: 20px;
   background: #f4f0f0;
   border-radius: 20px;
-  margin-left: 50px;
+
   box-shadow: 2px 2px 5px 5px #e7e7e7;
   cursor: pointer;
-  width: 30%;
+  margin: 20px auto;
+  box-sizing: border-box;
+  width: (100%-40px);
 }
 .rounded_card:hover {
   background: #e7e7e7;
