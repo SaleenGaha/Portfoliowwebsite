@@ -3,7 +3,7 @@
   --lightPrimary: #81c784; /* Mint Green */
 }
 * {
-  font-family: "League Spartan", serif;
+  font-family: "Inter", serif;
 }
 
 body,
@@ -20,14 +20,38 @@ a {
   background: #ccc;
   padding: 20px;
   position: sticky;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   z-index: 999999999;
 }
+
 .nav_item {
   font-weight: bold;
   padding: 5px;
-  font-size: 15px;
+  font-size: 17px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transition background and color */
+}
+
+.nav_item a { /* Style the <a> tag within .nav_item */
+  color: var(--primary); /* Initial color */
+  padding: 5px 10px; /* Add some padding to the link */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  display: block; /* Make the <a> a block element for better hover effect */
+  text-decoration: none; /* Remove underlines from the links */
+  transition: color 0.3s ease; /* Transition color only */
+}
+
+.nav_item:hover {
+  background-color: var(--lightPrimary); /* Background on hover */
+}
+
+.nav_item a:hover {
+  color: white; /* Text color on hover */
+}
+
+.nav_item.active a { /* Style for the active/current page */
+  color: white;
+  background-color: var(--primary);
 }
 .flex_container {
   display: flex;
@@ -53,7 +77,7 @@ a {
   margin-bottom: 10px;
 }
 .Intro_text {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
 }
 .rounded_card {

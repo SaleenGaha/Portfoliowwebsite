@@ -34,10 +34,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (!messageInput.value.trim()) {
-      messageInput.style.borderColor = "red"; // Highlight the invalid field
+      messageInput.style.borderColor = "red"; 
       isValid = false;
     } else {
-      messageInput.style.borderColor = ""; // Remove the highlight
+      messageInput.style.borderColor = "";
     }
 
     // If the form is invalid, show an error message and exit
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (result.success) {
         formMessage.innerHTML = "Message sent successfully! ✅";
         formMessage.style.color = "green";
-        contactForm.reset(); // Reset the form after success
+        contactForm.reset();
         
         // Clear the success message after 5 seconds
         setTimeout(() => {
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Helper function to validate email format
+  /
   function validateEmail(email) {
     const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     return regex.test(email);
