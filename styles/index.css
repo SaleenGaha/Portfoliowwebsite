@@ -278,3 +278,95 @@ footer {
   background-color:#f9f9f9;
   cursor: pointer;
 }
+/* Wrapper to center everything */
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style for the heading */
+.projects-heading {
+  text-align: center;
+  font-size: 28px;
+  margin: 30px 0;
+}
+
+/* Flexbox container for project cards */
+.project-showcase {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Aligns items at the top */
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1000px; /* Adjust based on your layout */
+  margin: auto;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 420px; /* Reduce this to remove excess space */
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+  height: 160px; /* Reduce height to save space */
+  object-fit: cover;
+}
+
+.card h2 {
+  margin: 8px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 13px;
+  color: #555;
+  flex-grow: 1; /* Ensures text occupies available space */
+  margin-bottom: 10px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 8px 12px; /* Reduce padding to shrink buttons */
+  border-radius: 5px;
+  font-size: 13px;
+  text-align: center;
+  width: 47%;
+}
+
+.github {
+  background: #24292e;
+  color: white;
+}
+
+.github:hover {
+  background: #181a1b;
+}
+
+.live-demo {
+  background: #007bff;
+  color: white;
+}
+
+.live-demo:hover {
+  background: #0056b3;
+}
+
+}
