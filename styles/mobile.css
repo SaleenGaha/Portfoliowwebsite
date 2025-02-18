@@ -11,9 +11,25 @@
     width: 100%;
   }
   .navbar_Mobile {
-    flex-direction: row !important;
-  }
-  .nav_item {
+    width: 100%; /* Ensure it takes full width */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to adjust */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ccc; /* Adjust if needed */
     padding: 10px;
+    position: fixed; /* Ensures it stays at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .nav_item {
+    flex-grow: 1; /* Ensures equal spacing */
+    text-align: center;
+    padding: 10px;
+    font-size: 14px; /* Adjust size for smaller screens */
+  }
+  
   }
 }
